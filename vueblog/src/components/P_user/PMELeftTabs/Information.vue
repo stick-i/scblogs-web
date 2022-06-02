@@ -12,19 +12,19 @@
               </div>
             </div>
         </div>
-        <div class="rightContentA-2">
-            <div class="rightContentA-2-container">
-                <div class="myMoney">
-                  <i></i>
-                  <span>我的余额{{mymoney}}</span>
-                </div>
-                <div class="click">
-                  <button>去充值</button>|
-                  <button>个人主页</button>|
-                  <button>我的勋章</button>
-                </div>
-            </div>
-        </div>
+<!--        <div class="rightContentA-2">-->
+<!--            <div class="rightContentA-2-container">-->
+<!--                <div class="myMoney">-->
+<!--                  <i></i>-->
+<!--                  <span>我的余额{{mymoney}}</span>-->
+<!--                </div>-->
+<!--                <div class="click">-->
+<!--                  <button>去充值</button>|-->
+<!--                  <button>个人主页</button>|-->
+<!--                  <button>我的勋章</button>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
     </div>
     <div class="rightContentB">
         <div class="rightContentB-1">
@@ -75,7 +75,7 @@
 import uploadImg from "@/components/P_user/UploadImg/uploadImg.vue"
 import qs from "qs"
 export default {
-  name: "TabsContent",
+  name: "Information",
   components:{
     uploadImg,
   },
@@ -143,7 +143,6 @@ export default {
       },
       submit(){
         // 修改用户名称,需要添加ID元素
-        console.log("点击成功修改用户昵称")
         let formdata = new FormData()
         formdata.append("nickname",this.form.nickname)
         this.$axios.put('/user/nickname',formdata,this.config).then(res=>{
@@ -172,7 +171,6 @@ export default {
         // this.form.nickname=this.userMessage.nickname
         this.formchange=true
         this.buttonSeen=true
-        console.log("点击了取消按钮")
       }
   }
 }
@@ -188,12 +186,10 @@ export default {
 .rightContentA{
   width: 100%;
   background: white;
-  height: 230px;
 }
 .rightContentA .rightContentA-1{
   width: 100%;
   height: 75%;
-  border-bottom: 3px solid rgb(245,246,247);
 }
 .rightContentA .rightContentA-1-container{
   padding: 24px 0 40px 30px;
