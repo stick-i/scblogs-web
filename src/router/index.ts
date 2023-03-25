@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 const HelloWorld = () => import('@/components/HelloWorld.vue');
+// const Layout = () => import('@/layout/index.vue');
 
 const routes: RouteRecordRaw[] = [
 	{
@@ -8,7 +9,7 @@ const routes: RouteRecordRaw[] = [
 	},
 	{
 		path: '/',
-		redirect: '/hello',
+		redirect: '/home',
 	},
 ];
 
