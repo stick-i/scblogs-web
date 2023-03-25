@@ -4,6 +4,6 @@
 	</q-toolbar>
 </template>
 
-<script setup name="Footer"></script>
+<script setup lang="ts" name="Footer"></script>
 
 <style lang="scss" scoped></style>

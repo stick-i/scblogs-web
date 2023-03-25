@@ -33,6 +33,10 @@
 	</div>
 </template>
 
-<script setup lang="ts" name="Header"></script>
+<script setup lang="ts" name="Header">
+import { ref } from 'vue';
+
+const text = ref('');
+</script>
 
 <style scoped></style>
